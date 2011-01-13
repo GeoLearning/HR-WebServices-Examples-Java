@@ -1,18 +1,21 @@
 #!/bin/sh
 
-#  Copyright 2001,2004-2006 The Apache Software Foundation
-#
-#  Licensed under the Apache License, Version 2.0 (the "License");
-#  you may not use this file except in compliance with the License.
-#  You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-#  Unless required by applicable law or agreed to in writing, software
-#  distributed under the License is distributed on an "AS IS" BASIS,
-#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#  See the License for the specific language governing permissions and
-#  limitations under the License.
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements. See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership. The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License. You may obtain a copy of the License at
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied. See the License for the
+# specific language governing permissions and limitations
+# under the License.
 
 # ----------------------------------------------------------------------------
 #  Set Environment Shell Script
@@ -85,7 +88,7 @@ for f in "$AXIS2_HOME"/lib/*.jar
 do
   AXIS2_CLASSPATH="$AXIS2_CLASSPATH":$f
 done
-AXIS2_CLASSPATH="$JAVA_HOME/lib/tools.jar":"$AXIS2_CLASSPATH":"$CLASSPATH"
+AXIS2_CLASSPATH="$AXIS2_HOME":"$JAVA_HOME/lib/tools.jar":"$AXIS2_CLASSPATH":"$CLASSPATH"
 
 # For Cygwin, switch paths to Windows format before running java
 if $cygwin; then
@@ -96,9 +99,9 @@ if $cygwin; then
   JAVA_ENDORSED_DIRS=`cygpath --path --windows "$JAVA_ENDORSED_DIRS"`
 fi
 
-export AXIS2_HOME=$AXIS2_HOME
-export JAVA_HOME=$JAVA_HOME
-export AXIS2_CLASSPATH=$AXIS2_CLASSPATH
+export AXIS2_HOME="$AXIS2_HOME"
+export JAVA_HOME="$JAVA_HOME"
+export AXIS2_CLASSPATH="$AXIS2_CLASSPATH"
 
 
 echo " Using AXIS2_HOME:   $AXIS2_HOME"
