@@ -1,0 +1,442 @@
+Buildfile: c:\Maestro5\HR-WebServices-Examples-Java\build.xml
+
+init:
+
+build:
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\build.xml:26: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 3 source files to c:\Maestro5\HR-WebServices-Examples-Java\build
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:4609: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:4627: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:4628: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:4634: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:4636: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:4878: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20364: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20382: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20383: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20389: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20391: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20603: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:11199: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:11217: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:11218: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:11224: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:11226: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:12519: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:13794: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:13812: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:13813: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:13819: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:13821: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:14095: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:19839: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:19857: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:19858: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:19864: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:19866: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:20100: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:7204: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:7222: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:7223: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:7229: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:7231: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:7437: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:15855: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:15873: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:15874: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:15880: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:15882: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:16082: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8241: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8259: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8260: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8266: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8268: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8474: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5150: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5168: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5169: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5175: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5177: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5411: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:17317: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:17335: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:17336: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:17342: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:17344: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:17573: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5632: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5650: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5651: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5657: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5659: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:5865: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8814: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8832: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8833: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8839: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:8841: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:9047: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:2732: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:2750: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:2751: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:2757: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:2759: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:2993: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:6083: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:6101: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:6102: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:6108: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:6110: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:6316: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:18725: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:18743: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:18744: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:18750: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:18752: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:18986: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:14819: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:14837: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:14838: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:14844: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:14846: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]             throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                     ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:15075: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                     throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                        ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:3665: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                final org.apache.axiom.om.OMFactory factory) throws org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:3683: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                        org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter)
+    [javac]                                                                                 ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:3684: cannot find symbol
+    [javac] symbol  : class ADBException
+    [javac] location: package org.apache.axis2.databinding
+    [javac]                                 throws javax.xml.stream.XMLStreamException, org.apache.axis2.databinding.ADBException{
+    [javac]                                                                                                         ^
+    [javac] c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java:3690: package org.apache.axis2.databinding.utils.writer does not exist
+    [javac]                                org.apache.axis2.databinding.utils.writer.MTOMAwareXMLStreamWriter xmlWriter,
+    [javac]                                                                         ^
+    [javac] Note: c:\Maestro5\HR-WebServices-Examples-Java\src\com\geolearning\geonext\webservices\WebServicesStub.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 100 errors

@@ -1,14 +1,8 @@
 /*
 ##########################################################
-## GeoNext Project
-##
 ## CONFIDENTIAL & PROPRIETARY
-##
 ## Copyright (C) 2004 - 2007 by Geolearning, Inc.
 ## All Rights Reserved.
-##
-## Written by Jeff Bartolotta
-##
 ##########################################################
 */
 
@@ -28,25 +22,17 @@ import java.util.UUID;
 
 
 public class GeolearningJavaExample {
-    private WebServicesWebServicesSoap12Stub SERVICE;
+    private WebServicesStub SERVICE;
 
-	
-	
-	
     public GeolearningJavaExample() {
     }
 
-    
-    
-    
-    
-
     protected void initialize() throws AxisFault {
-        EndpointReference targetEPR = new EndpointReference("http://gm1.geolearning.com/geonext/geo_testing/webservices/geonext.asmx");
+        EndpointReference targetEPR = new EndpointReference("https://localhost/geonext/webservices/geonext.asmx");
 
         HttpTransportProperties.Authenticator auth = new HttpTransportProperties.Authenticator();
-        auth.setUsername("The UserName Of a Admin");
-        auth.setPassword("The Admins Password");
+        auth.setUsername("geositeadmin");
+        auth.setPassword("Password1!");
 	auth.setPreemptiveAuthentication(true);
 	    
         Options options = new Options();
@@ -54,39 +40,20 @@ public class GeolearningJavaExample {
         options.setTo(targetEPR);
         options.setTransportInProtocol(Constants.TRANSPORT_HTTP);
 
-        SERVICE = new WebServicesWebServicesSoap12Stub();
+        SERVICE = new WebServicesStub();
 
         SERVICE._getServiceClient().setOptions(options);
     }
 
-
-    
-    
-    
-    
-    
-    
-
     protected void displayAttribute(String name, String value)  {
         System.out.println(name + ": " + value);
     }
-    
-    
-    
-    
-    
-    
     
     public String getRandomString(){
 	UUID uuid = UUID.randomUUID();
        return uuid.randomUUID() .toString();
     }
 
-
-    
-    
-    
-    
     protected String createNewUser() throws RemoteException {
         System.out.println("***createNewUser begin***");
 
@@ -94,15 +61,15 @@ public class GeolearningJavaExample {
 	System.out.println("Random username generated: " + userName);
 	    
 	//Check to see if the user already exists.    
-	WebServicesWebServicesSoap12Stub.UserExists userExists = new WebServicesWebServicesSoap12Stub.UserExists();
+	WebServicesStub.UserExists userExists = new WebServicesStub.UserExists();
         userExists.setUserName(userName);
-	if(SERVICE.UserExists(userExists).getUserExistsResult()){
+	if(SERVICE.userExists(userExists).getUserExistsResult()){
 		System.out.println("By some crazy act of Thor the user already exists!");
 		return userName;
 	}
-	    
+	
 	//Grab a empty shell user from the service 
-	WebServicesWebServicesSoap12Stub.User user =SERVICE.GenerateUserObject(new WebServicesWebServicesSoap12Stub.GenerateUserObject()).getGenerateUserObjectResult();
+	com.geolearning.geonext.webservices.WebServicesStub.User user = SERVICE.generateUserObject(new WebServicesStub.GenerateUserObject()).getGenerateUserObjectResult();
 	
 	// First lets set all of the simple string values.
 	// Then we will attack the complex types
@@ -125,44 +92,44 @@ public class GeolearningJavaExample {
        
 	// the postal code type is a enum.
 	user.setPostalCode("55512");
-        user.setPostalCodeType(WebServicesWebServicesSoap12Stub.PostalCodeType.US);
+        user.setPostalCodeType(WebServicesStub.PostalCodeType.US);
 	
 	// Supervisor takes the username of the supervisors in a array of strings
-	WebServicesWebServicesSoap12Stub.ArrayOfString supervisorNames = new WebServicesWebServicesSoap12Stub.ArrayOfString();
+	WebServicesStub.ArrayOfString supervisorNames = new WebServicesStub.ArrayOfString();
         supervisorNames.addString("Geo_Testing");
         user.setSupervisorUserNames(supervisorNames);
 	
 	// roles must be valid roles. Also Default role name must be in the list of roles already.
 	user.setDefaultRoleName("Administrator");
-        WebServicesWebServicesSoap12Stub.ArrayOfString roleNames = new WebServicesWebServicesSoap12Stub.ArrayOfString();
+        WebServicesStub.ArrayOfString roleNames = new WebServicesStub.ArrayOfString();
         roleNames.addString("Administrator");
         user.setRoleNames(roleNames);
 	
 	// Groups are mostly the same but in this case we are dealing with the group object which
 	// also needs to come out of the stubs.
 	//The "name" will represent the full path to the group, seperated by slashes down the tree.
-        WebServicesWebServicesSoap12Stub.ArrayOfGroup arrayOfGroup = new WebServicesWebServicesSoap12Stub.ArrayOfGroup();
-        WebServicesWebServicesSoap12Stub.Group group = new WebServicesWebServicesSoap12Stub.Group();
+        WebServicesStub.ArrayOfGroup arrayOfGroup = new WebServicesStub.ArrayOfGroup();
+        WebServicesStub.Group group = new WebServicesStub.Group();
         group.setName("Tim's Group/My Test Group");
         arrayOfGroup.addGroup(group);
         user.setGroups(arrayOfGroup);
 	
 	// now some Catalog Access Codes.
-        WebServicesWebServicesSoap12Stub.ArrayOfString catalogAccessCodeNames = new WebServicesWebServicesSoap12Stub.ArrayOfString();
+        WebServicesStub.ArrayOfString catalogAccessCodeNames = new WebServicesStub.ArrayOfString();
         catalogAccessCodeNames.addString("CrazyCatalogAccessCode");
         user.setCatalogAccessCodeNames(catalogAccessCodeNames);
 	
 	// Custom User Attributes. emember that these would need to have already been created in the system.
-	WebServicesWebServicesSoap12Stub.ArrayOfCustomUserAttribute arrayOfCustomUserAttribute = new WebServicesWebServicesSoap12Stub.ArrayOfCustomUserAttribute();
-	WebServicesWebServicesSoap12Stub.CustomUserAttribute cua = new WebServicesWebServicesSoap12Stub.CustomUserAttribute();
+	WebServicesStub.ArrayOfCustomUserAttribute arrayOfCustomUserAttribute = new WebServicesStub.ArrayOfCustomUserAttribute();
+	WebServicesStub.CustomUserAttribute cua = new WebServicesStub.CustomUserAttribute();
 	cua.setName("Rep ID");
         cua.setValue("8675309");
         arrayOfCustomUserAttribute.addCustomUserAttribute(cua);
         user.setCustomUserAttributes(arrayOfCustomUserAttribute);
 	
 	//Custom SELECT user attributes.
-	arrayOfCustomUserAttribute = new WebServicesWebServicesSoap12Stub.ArrayOfCustomUserAttribute();
-        cua = new WebServicesWebServicesSoap12Stub.CustomUserAttribute();
+	arrayOfCustomUserAttribute = new WebServicesStub.ArrayOfCustomUserAttribute();
+        cua = new WebServicesStub.CustomUserAttribute();
         cua.setName("Niko-Niko");
         cua.setValue("Sad");
         arrayOfCustomUserAttribute.addCustomUserAttribute(cua);
@@ -172,10 +139,10 @@ public class GeolearningJavaExample {
 	
 	// finally, we can save the user. note that save and update user return a result object.
 	// we can use that result to see messages and potential errors with our process.
-	WebServicesWebServicesSoap12Stub.CreateUser createUser = new WebServicesWebServicesSoap12Stub.CreateUser();
+	WebServicesStub.CreateUser createUser = new WebServicesStub.CreateUser();
         createUser.setUser(user);
-	WebServicesWebServicesSoap12Stub.CreateUserResponse createUserResponse = SERVICE.CreateUser(createUser);
-	WebServicesWebServicesSoap12Stub.UserResult userResult = createUserResponse.getCreateUserResult();
+	WebServicesStub.CreateUserResponse createUserResponse = SERVICE.createUser(createUser);
+	WebServicesStub.UserResult userResult = createUserResponse.getCreateUserResult();
 	printUserResult(userResult);
 	
 	//System.out.println(userName + "'s new Password is " + userResult.getDefaultPassword());
@@ -183,13 +150,7 @@ public class GeolearningJavaExample {
 	return userName;
     }
     
-    
-    
-    
-    
-    
-    
-    public void printUserResult(WebServicesWebServicesSoap12Stub.UserResult userResult){
+    public void printUserResult(WebServicesStub.UserResult userResult){
 	// ERRORS and WARNINGS
 	// ************************************************************************
 	//	   You would think that a Axis method called getString() would return a string
@@ -214,21 +175,15 @@ public class GeolearningJavaExample {
         }
     }
 
-
-    
-    
-    
-    
-
-    protected void updateUser(WebServicesWebServicesSoap12Stub.User user) throws RemoteException {
+    protected void updateUser(WebServicesStub.User user) throws RemoteException {
         System.out.println("***updateUser begin for " + user.getUserName() +" ***");
 
         user.setCity("New " + user.getCity());
 
-        WebServicesWebServicesSoap12Stub.UpdateUser updateUser = new WebServicesWebServicesSoap12Stub.UpdateUser();
+        WebServicesStub.UpdateUser updateUser = new WebServicesStub.UpdateUser();
         updateUser.setUser(user);
 
-        WebServicesWebServicesSoap12Stub.Result result = SERVICE.UpdateUser(updateUser).getUpdateUserResult();
+        WebServicesStub.Result result = SERVICE.updateUser(updateUser).getUpdateUserResult();
 
         String[] errors = result.getErrors().getString();
         if (errors != null) {
@@ -251,20 +206,14 @@ public class GeolearningJavaExample {
         System.out.println("***updateUser end***");
     }
 
-
-    
-    
-    
-    
-
-    public WebServicesWebServicesSoap12Stub.User loadUser(String userName) throws RemoteException {
+    public WebServicesStub.User loadUser(String userName) throws RemoteException {
         System.out.println("***loadUser begin for " + userName + " ***");
 
-        WebServicesWebServicesSoap12Stub.LoadUser loadUser = new WebServicesWebServicesSoap12Stub.LoadUser();
+        WebServicesStub.LoadUser loadUser = new WebServicesStub.LoadUser();
         loadUser.setUserName(userName);
 
-        WebServicesWebServicesSoap12Stub.LoadUserResponse loadUserResponse = SERVICE.LoadUser(loadUser);
-        WebServicesWebServicesSoap12Stub.User user = loadUserResponse.getLoadUserResult();
+        WebServicesStub.LoadUserResponse loadUserResponse = SERVICE.loadUser(loadUser);
+        WebServicesStub.User user = loadUserResponse.getLoadUserResult();
 	
 	if(user != null){
 		System.out.println("***User Found!***");
@@ -279,11 +228,7 @@ public class GeolearningJavaExample {
     }
     
     
-    
-    
-    
-    
-    public void PrintUserRecord(WebServicesWebServicesSoap12Stub.User user){
+    public void PrintUserRecord(WebServicesStub.User user){
 	    
 	SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
 	displayAttribute("User Name", user.getUserName());
@@ -331,9 +276,9 @@ public class GeolearningJavaExample {
         displayAttribute("Default Role", user.getDefaultRoleName());
 
 	System.out.println("***Groups***");
-        WebServicesWebServicesSoap12Stub.Group[] groups = user.getGroups().getGroup();
+        WebServicesStub.Group[] groups = user.getGroups().getGroup();
         if (groups != null) {
-            for (WebServicesWebServicesSoap12Stub.Group group : groups) {
+            for (WebServicesStub.Group group : groups) {
                  displayAttribute("Group:", group.getName());
             }
         } else {
@@ -341,9 +286,9 @@ public class GeolearningJavaExample {
         }
 
 	System.out.println("***Custom User Attributes***");
-        WebServicesWebServicesSoap12Stub.CustomUserAttribute[] cuas = user.getCustomUserAttributes().getCustomUserAttribute();
+        WebServicesStub.CustomUserAttribute[] cuas = user.getCustomUserAttributes().getCustomUserAttribute();
         if (cuas != null) {
-            for (WebServicesWebServicesSoap12Stub.CustomUserAttribute cua : cuas) {
+            for (WebServicesStub.CustomUserAttribute cua : cuas) {
                 displayAttribute("CUA:", cua.getName() + " : " + cua.getValue());
             }
         } else {
@@ -353,7 +298,7 @@ public class GeolearningJavaExample {
 	System.out.println("***Custom Select User Attributes***");
         cuas = user.getCustomSelectUserAttributes().getCustomUserAttribute();
         if (cuas != null) {
-            for (WebServicesWebServicesSoap12Stub.CustomUserAttribute csua : cuas) {
+            for (WebServicesStub.CustomUserAttribute csua : cuas) {
                 displayAttribute("CSUA:", csua.getName() + " : " + csua.getValue());
             }
         } else {
@@ -374,24 +319,18 @@ public class GeolearningJavaExample {
 
 
     
-    
-    
-    
-    
-    
-    
-    
-    
+
 
     public static void main(String[] args) {
-        try {
+
+	    try {
 	
 	GeolearningJavaExample gje = new GeolearningJavaExample();
 	gje.initialize();
 	System.out.println("*******************************************");
 	String userName = gje.createNewUser();
 	System.out.println("*******************************************");
-	WebServicesWebServicesSoap12Stub.User testUser = gje.loadUser(userName);
+	WebServicesStub.User testUser = gje.loadUser(userName);
 	System.out.println("*******************************************");
 	gje.updateUser(testUser);
 	System.out.println("*******************************************");
@@ -399,6 +338,7 @@ public class GeolearningJavaExample {
         } catch (Exception e) {
             System.out.println("Caught Exception: " + e.getMessage() + " " + e.getClass().getName());
         }
+	
     }
 }
 
