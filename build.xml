@@ -12,7 +12,7 @@
     <property name="classes" value="${build}/classes"/>
     <property name="lib" value="${build}/lib"/>
     <property name="resources" value="${project.base.dir}/resources"/>
-    <property name="jar" location="jar" />
+    <property name="jar" location="jar"/>
     <property value="" name="jars.ok"/>
     <path id="axis2.class.path">
         <pathelement path="${java.class.path}"/>
@@ -82,28 +82,23 @@
         <mkdir dir="${build}/repo/services"/>
         <copy file="${build}/lib/${name}.aar" toDir="${build}/repo/services/"/>
     </target>
-
-
-    
-     <target name="jar" depends="compile.src" description="generate the distribution" >
-    <!-- Create the distribution directory -->
-    <jar jarfile="${jar}/GeolearningJavaExample.jar" basedir="${build}"/>
-  </target>
-
-  <target name="run" depends="jar.client">
-    <java classname="com.geolearning.geonext.webservices.GeolearningJavaExample" fork="true">
-      <classpath>
-        <fileset dir="${lib}">
-            <include name="**/*.jar"/>
-        </fileset>
-	<fileset dir="${env.AXIS2_HOME}">
-            <include name="**/*.jar"/>
-        </fileset>
-        <pathelement path="${axis2.class.path}"/>
-      </classpath>
-    </java>
-  </target>
-  
+    <target name="jar" depends="compile.src" description="generate the distribution">
+        <!-- Create the distribution directory -->
+        <jar jarfile="jar/GeolearningJavaExample.jar" basedir="${build}"/>
+    </target>
+    <target name="run" depends="jar.client">
+        <java classname="com.geolearning.geonext.webservices.GeolearningJavaExample" fork="true">
+            <classpath>
+                <fileset dir="${lib}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <fileset dir="${env.AXIS2_HOME}">
+                    <include name="**/*.jar"/>
+                </fileset>
+                <pathelement path="${axis2.class.path}"/>
+            </classpath>
+        </java>
+    </target>
     <target name="clean">
         <delete dir="${build}"/>
     </target>
