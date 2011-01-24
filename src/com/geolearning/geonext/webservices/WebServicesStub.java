@@ -202,7 +202,7 @@
      */
     public WebServicesStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
-                    this(configurationContext,"https://localhost/geonext/webservices/geonext.asmx" );
+                    this(configurationContext,"https://localhost/Geonext/webservices/geonext.asmx" );
                 
     }
 
@@ -211,7 +211,7 @@
      */
     public WebServicesStub() throws org.apache.axis2.AxisFault {
         
-                    this("https://localhost/geonext/webservices/geonext.asmx" );
+                    this("https://localhost/Geonext/webservices/geonext.asmx" );
                 
     }
 
@@ -2641,7 +2641,7 @@
         }
         return false;
     }
-     //https://localhost/geonext/webservices/geonext.asmx
+     //https://localhost/Geonext/webservices/geonext.asmx
         public static class LoadUserByUniqueId
         implements org.apache.axis2.databinding.ADBBean{
         
@@ -4103,11 +4103,17 @@
                                     public static final java.lang.String _External =
                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString("External");
                                 
+                                    public static final java.lang.String _SumTotal =
+                                        org.apache.axis2.databinding.utils.ConverterUtil.convertToString("SumTotal");
+                                
                                 public static final ProfileOwner LMS =
                                     new ProfileOwner(_LMS,true);
                             
                                 public static final ProfileOwner External =
                                     new ProfileOwner(_External,true);
+                            
+                                public static final ProfileOwner SumTotal =
+                                    new ProfileOwner(_SumTotal,true);
                             
 
                                 public java.lang.String getValue() { return localProfileOwner;}
