@@ -28,10 +28,10 @@ public class GeolearningJavaExample {
     }
 
     protected void initialize() throws AxisFault {
-        EndpointReference targetEPR = new EndpointReference("https://localhost/geonext/webservices/geonext.asmx");
+        EndpointReference targetEPR = new EndpointReference("https://gm1.geolearning.com/geonext/geo_testing2/webservices/geonext.asmx");
 
         HttpTransportProperties.Authenticator auth = new HttpTransportProperties.Authenticator();
-        auth.setUsername("geositeadmin");
+        auth.setUsername("adminUserName");
         auth.setPassword("Password1!");
 	auth.setPreemptiveAuthentication(true);
 	    
@@ -43,6 +43,7 @@ public class GeolearningJavaExample {
         SERVICE = new WebServicesStub();
 
         SERVICE._getServiceClient().setOptions(options);
+	SERVICE._getServiceClient().getOptions().setProperty(HTTPConstants.CHUNKED,false);
     }
 
     protected void displayAttribute(String name, String value)  {
