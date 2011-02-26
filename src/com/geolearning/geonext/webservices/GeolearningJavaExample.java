@@ -37,13 +37,14 @@ public class GeolearningJavaExample {
 	    
         Options options = new Options();
         options.setProperty(HTTPConstants.AUTHENTICATE, auth);
+	options.setProperty(HTTPConstants.CHUNKED,false);
         options.setTo(targetEPR);
         options.setTransportInProtocol(Constants.TRANSPORT_HTTP);
 
         SERVICE = new WebServicesStub();
 
         SERVICE._getServiceClient().setOptions(options);
-	SERVICE._getServiceClient().getOptions().setProperty(HTTPConstants.CHUNKED,false);
+
     }
 
     protected void displayAttribute(String name, String value)  {
