@@ -202,7 +202,7 @@
      */
     public WebServicesStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
-                    this(configurationContext,"https://localhost/Geonext/webservices/geonext.asmx" );
+                    this(configurationContext,"https://localhost/geonext/webservices/geonext.asmx" );
                 
     }
 
@@ -211,7 +211,7 @@
      */
     public WebServicesStub() throws org.apache.axis2.AxisFault {
         
-                    this("https://localhost/Geonext/webservices/geonext.asmx" );
+                    this("https://localhost/geonext/webservices/geonext.asmx" );
                 
     }
 
@@ -2641,7 +2641,7 @@
         }
         return false;
     }
-     //https://localhost/Geonext/webservices/geonext.asmx
+     //https://localhost/geonext/webservices/geonext.asmx
         public static class LoadUserByUniqueId
         implements org.apache.axis2.databinding.ADBBean{
         
@@ -11614,8 +11614,15 @@
                         */
 
                         
-                                    protected boolean localReceiveAutomatedEmails ;
+                                    protected boolean localReceiveAutomatedEmails =
+                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToBoolean("true");
                                 
+                           /*  This tracker boolean wil be used to detect whether the user called the set method
+                          *   for this attribute. It will be used to determine whether to include this field
+                           *   in the serialized XML
+                           */
+                           protected boolean localReceiveAutomatedEmailsTracker = false ;
+                           
 
                            /**
                            * Auto generated getter method
@@ -11633,6 +11640,15 @@
                                */
                                public void setReceiveAutomatedEmails(boolean param){
                             
+                                       // setting primitive attribute tracker to true
+                                       
+                                               if (false) {
+                                           localReceiveAutomatedEmailsTracker = false;
+                                              
+                                       } else {
+                                          localReceiveAutomatedEmailsTracker = true;
+                                       }
+                                   
                                             this.localReceiveAutomatedEmails=param;
                                     
 
@@ -12829,7 +12845,7 @@
                                           }
                                     
                                    xmlWriter.writeEndElement();
-                             }
+                             } if (localReceiveAutomatedEmailsTracker){
                                     namespace = "http://geolearning.com/geonext/webservices/";
                                     if (! namespace.equals("")) {
                                         prefix = xmlWriter.getPrefix(namespace);
@@ -12858,7 +12874,7 @@
                                                }
                                     
                                    xmlWriter.writeEndElement();
-                             
+                             }
                                             if (localOwner==null){
                                                  throw new org.apache.axis2.databinding.ADBException("Owner cannot be null!!");
                                             }
@@ -13371,13 +13387,13 @@
                                         } else {
                                            throw new org.apache.axis2.databinding.ADBException("DirectSupervisorName cannot be null!!");
                                         }
-                                    }
+                                    } if (localReceiveAutomatedEmailsTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://geolearning.com/geonext/webservices/",
                                                                       "ReceiveAutomatedEmails"));
                                  
                                 elementList.add(
                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localReceiveAutomatedEmails));
-                            
+                            }
                             elementList.add(new javax.xml.namespace.QName("http://geolearning.com/geonext/webservices/",
                                                                       "Owner"));
                             
@@ -14142,11 +14158,10 @@
                                     
                               }  // End of if for expected property start element
                                 
-                                else{
-                                    // A start element we are not expecting indicates an invalid parameter was passed
-                                    throw new org.apache.axis2.databinding.ADBException("Unexpected subelement " + reader.getLocalName());
-                                }
-                            
+                                    else {
+                                        
+                                    }
+                                
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
